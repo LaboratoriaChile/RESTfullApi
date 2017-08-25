@@ -1,0 +1,31 @@
+{
+  "name": "labapi",
+  "version": "1.0.0",
+  "description": "\"RESTful LabApi\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaboratoriaChile/RESTfullApi.git"
+  },
+  "keywords": [
+    "api",
+    "laboratoria"
+  ],
+  "author": "Laboratoria Chile",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaboratoriaChile/RESTfullApi/issues"
+  },
+  "homepage": "https://github.com/LaboratoriaChile/RESTfullApi#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.8"
+  }
+}
