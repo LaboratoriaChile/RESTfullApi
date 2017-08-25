@@ -16,24 +16,27 @@ module.exports = function(app) {
     .delete(todoList.delete_a_coder);
 
   app.route('/jedis')
-    .get(todoList.list_all_jedis)
-    .post(todoList.create_a_jedi);
+    .get(jediRoute.list_all_jedis)
+    .post(jediRoute.create_a_jedi);
 
 
   app.route('/jedis/:jediId')
-    .get(todoList.read_a_jedi)
-    .put(todoList.update_a_jedi)
-    .delete(todoList.delete_a_jedi);
+    .get(jediRoute.read_a_jedi)
+    .put(jediRoute.update_a_jedi)
+    .delete(jediRoute.delete_a_jedi);
 
   app.route('/sprints')
-    .get(todoList.list_all_sprints)
-    .post(todoList.create_a_sprint);
+    .get(sprintRoute.list_all_sprints)
+    .post(sprintRoute.create_a_sprint);
 
 
   app.route('/sprints/:sprintId')
-    .get(todoList.read_a_sprint)
-    .put(todoList.update_a_sprint)
-    .delete(todoList.delete_a_sprint);
+    .get(sprintRoute.read_a_sprint)
+    .put(sprintRoute.update_a_sprint)
+    .delete(sprintRoute.delete_a_sprint);
+
+  app.route('/login')
+    .get(todoList.login_a_coder)
  
 };
 
